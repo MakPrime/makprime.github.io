@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://btc-mixer.io/createmix.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+	<meta name="description" content="If your are searching for the best bitcoin mixer, you have just found it. Even better than Helix mixer by grams, bitmixer.io or coinmixer.">
+	<meta name="keywords" content="bitcoin mixer, best bitcoin mixer, best bitcoin tumbler, bitcoin mixer reddit, bitcoin mixer reviews, helix bitcoin mixer, btc mixer, btc tumbler, bitcoin mixing service, best bitcoin mixing service">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>--- ULTRAMIXER --- | Bitcoin Mixer | Bitcoin Tumbler | Best Bitcoin mixing service | --- ULTRAMIXER ---</title>
+
+	<link rel="shortcut icon" href="https://btc-mixer.io/img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./creatmix_files/style.css">
+        <link href="./creatmix_files/font-awesome.css" rel="stylesheet">
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie7-8.css">
+	<![endif]-->
+	<link href="./creatmix_files/css.css" rel="stylesheet"></head><body><span id="warning-container"><i data-reactroot=""></i></span>
+
+
+
+	<div id="page">
+		<header>
+			<div id="header">
+				<div class="container">
+                                        <div>
+                                                <div class="left">
+                                                        <a href="https://btc-mixer.io/index.html"><img src="./creatmix_files/logo.png" alt=""></a>
+                                                </div>
+                                                <ul id="nav">
+                                                        <li><a href="https://btc-mixer.io/work.html">How it works</a></li>
+                                                        <li><a href="https://btc-mixer.io/fees.html">Commissions</a></li>
+                                                        <li><a href="https://btc-mixer.io/faq.html">FAQs</a></li>
+                                                        <li><a href="https://btc-mixer.io/support.html">Contacts</a></li>
+                                                </ul>
+                                                <div class="clearfix"></div>
+                                        </div>
+				</div>
+			</div><!--header-->
+		</header>		<div id="midle" class="cont">
+			<div class="mixer">
+				<div class="slogan">High Volume <span>Bitcoin Mixer</span></div>
+				<div id="mixer_step3" class="mixer_box">
+					<div class="box">
+						<div class="row">
+							<div class="box1 blocks">
+								<div class="txt"><i class="info" title="The address of the recipient of your Bitcoin payment"></i>Send your Bitcoin <span class="black">(min. 0.01, max. 207 BTC)</span> to the address: </div>
+								<input name="hash" value="ХУЙБАЛА" id="address" class="int int_big int_green" type="text">
+								<div class="block">
+									<!--<span class="i i_copy copy" data-clipboard-target="#address">Copy to clipboard</span>
+								/<span class="i i_reload reload">Generate new address</span>-->
+								</div>
+							</div><!--
+						/--><div class="box2 blocks">
+								<div class="txt">Your UltraMixer code: <i class="info" title="If you previously used the UltraMixer service, enter the code to avoid using your own tools sent during the previous mix."></i></div>
+								<input name="cod" value="whG9Bv4N" class="int int_middle int_green" type="text">
+							</div>
+							<div class="qrcode" id="qrcode" title="1HtV8k2Pj4y5bRR1NbjF2uEq8DZjJF2pJk" align="center">
+							<canvas width="200" height="199" style="display: none;"></canvas><img alt="Scan me!" style="display: block;" src="./creatmix_files/btc-qr.png"></div>
+						</div>
+					</div>
+					<div id="loader" class="load_b"><div class="load blocks">Your transaction has not been found yet!<br> please send within 24 hours</div>
+</div>
+<script src="./creatmix_files/qrcode.js.Без названия"></script>
+<script type="text/javascript">
+var qrcode = new QRCode("qrcode", {
+    text: "1HtV8k2Pj4y5bRR1NbjF2uEq8DZjJF2pJk",
+    width: 200,
+    height: 199,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+</script>
+					<div class="box_b">
+					<a href="https://btc-mixer.io/createmix.php#" class="i i_letter">Download Letter of guarantee</a><!--
+					/--><i class="info info2" title="Info..."></i>
+					</div>
+				</div>
+			</div><!--.mixer-->
+			<div class="calc" style="margin: 0 0px;">
+				<h1>Accurate calculator and commission calculator</h1>
+				<div class="box">
+					<div class="row">
+						<div class="box1 blocks">
+							<div class="txt">I'll post:</div>
+						</div><!--
+					/--><div class="box2 blocks">
+							<input name="amount" onchange="doCalc()" id="amount" class="int" type="text">
+						</div><!--
+					/--><div class="box3 blocks">
+							<div class="text">BTC to address <span class="black">ХУЙБАЛА</span></div>
+						</div>
+					</div>
+					<div>
+						<div class="box1 blocks">
+							<div class="txt">I will get:</div>
+						</div><!--
+					/--><div class="box2 blocks">
+							<input name="amount100" id="a100" class="int" type="text">
+						</div><!--
+					/--><div class="box3 blocks">
+					<div class="text">BTCs to the address <span class="black"></span> across <span class="black">0h</span></div>
+						</div>
+					</div>
+					<div class="comissia blocks">Your personal commission <span class="black">0.5%</span> + <span class="black">0.002 BTC</span> for each output address</div>
+				</div>
+			</div>
+		</div><!--midle-->
+<script>
+function doCalc() {
+	var fieldsid = "100,";
+	var fields = fieldsid.split(","),
+    i;
+	var gamount = document.getElementById('amount').value * 100000000;
+	if(gamount < 1000001){
+	var amount = ((100 - 0.5) / 100) * gamount - 7960;
+	}else if(gamount > 49000010){
+	var amount = ((100 - 0.5) / 100) * gamount - 7960;
+	}else{
+	var amount = ((100 - 0.5) / 100) * gamount - 7960;
+	}
+	for (i = 0; i < fields.length; i++) {
+	//console.log('' + fields[i].lenght + ' / ' + fields[i]);
+	if(fields[i] > 0){
+	var result = (fields[i] / 100) * amount;
+	var resultformat = result / 1e8;
+	document.getElementById('a' + fields[i]).value = resultformat.toFixed(8);
+	console.log('' + result + '');
+	}else{
+	console.log('Empty Output value');
+	}
+}
+}
+
+</script>
+<script src="./creatmix_files/jquery-1.js.Без названия"></script><div id="height"></div>
+		<div id="footer">
+			<div class="container">
+				<div class="left">
+					<a href="https://btc-mixer.io/createmix.php"><img src="./creatmix_files/logo2.png" alt=""></a>
+				</div>
+				<div class="boxs">
+					<ul class="nav">
+						<li><a href="https://btc-mixer.io/createmix.php">Home</a></li>
+						<li><a href="https://btc-mixer.io/work.html">How it works</a></li>
+						<li><a href="https://btc-mixer.io/fees.html">Commissions</a></li>
+						<li><a href="https://btc-mixer.io/faq.html">FAQs</a></li>
+						<li><a href="https://btc-mixer.io/support.html">Contacts</a></li>
+					</ul>
+					<div class="copyright">©2020 by ULTRAMIXER. All Rights Reserved.</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div><!--footer-->
+	</div><!--page-->
+	<script type="text/javascript" src="./creatmix_files/jquery-1_002.js.Без названия"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script src="./creatmix_files/btcvalid.js.Без названия"></script>
+<script type="text/javascript">
+var x = document.getElementById("Form1");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+function myFocusFunction() {
+    	$('.box1').each(function(){
+		$(this).find('input').each(function(i,n){
+		addr = $(n).val();
+		if ( checkAddress(addr) ) {
+        document.getElementById("toggle-modal").className = "btn btn_mixing2";
+		document.getElementById("toggle-modal").disabled = false;
+		}else{
+		document.getElementById("toggle-modal").className = "btn btn_mixing2 btn_gray";
+		document.getElementById("toggle-modal").disabled = true;
+		}
+		});
+    });
+}
+
+function myBlurFunction() {
+    	$('.box1').each(function(){
+		$(this).find('input').each(function(i,n){
+		addr = $(n).val();
+		if ( checkAddress(addr) ) {
+        document.getElementById("toggle-modal").className = "btn btn_mixing2";
+		document.getElementById("toggle-modal").disabled = false;
+		}else{
+		document.getElementById("toggle-modal").className = "btn btn_mixing2 btn_gray";
+		document.getElementById("toggle-modal").disabled = true;
+		}
+		});
+    });
+}
+function Check(){
+var totalPoints = 0;
+	$('.box2').each(function(){
+		$(this).find('input').each(function(i,n){
+        totalPoints += parseInt($(n).val(),10); 
+		});
+    });
+	var errorBTC = 0;
+	$('.box1').each(function(){
+		$(this).find('input').each(function(i,n){
+		addr = $(n).val();
+		if ( checkAddress(addr) ) {
+        errorBTC += 0;
+		}else{
+		errorBTC += 1;
+		}
+		});
+    });
+		if(errorBTC != 0){
+		alert("BTC Address you entered is invalid!");
+		return false;
+		}else{
+		btc_clean = 1;
+		}
+		if(totalPoints != 100 && errorBTC != 0){
+		alert("Invalid Precentage: You entered " + totalPoints + "% Must be 100%");
+		return false;
+		}else{
+		return true;
+		}
+}
+$(document).ready(function(){
+	$("#add_address").on("click", function(){
+		var percent;
+		document.getElementById("first").style.visibility = "visible";
+		document.getElementById("fprecent").value = "50%";
+		count = $("#mixer_step2 .box .row").length;
+		var min = 1;
+		var max = 4;
+		var random = Math.floor(Math.random() * (max - min + 1)) + min;
+		if(count < 10){
+		if(count == 1){
+			document.getElementById("fprecent").value = "90%";
+			percent = 10;
+		}else if(count == 2){
+			document.getElementById("fprecent").value = "80%";
+			percent = 10;
+		}else if(count == 3){
+			document.getElementById("fprecent").value = "70%";
+			percent = 10;
+		}else if(count == 4){
+			document.getElementById("fprecent").value = "60%";
+			percent = 10;
+		}else if(count == 5){
+			document.getElementById("fprecent").value = "50%";
+			percent = 10;
+		}else if(count == 6){
+			document.getElementById("fprecent").value = "40%";
+			percent = 10;
+		}else if(count == 7){
+			document.getElementById("fprecent").value = "30%";
+			percent = 10;
+		}
+		else if(count == 8){
+			document.getElementById("fprecent").value = "20%";
+			percent = 10;
+		}
+		else if(count == 9){
+			document.getElementById("fprecent").value = "10%";
+			percent = 10;
+		}
+			count++;
+			$("#mixer_step2 .box").append('\
+				<div class="row">\
+					<div class="box1 blocks" style="float:left;">\
+						<div class="txt">Output address №' + count + ': <i class="info" title="The address of the recipient of your Bitcoin payment"></i></div>\
+						<input type="text" name="mixer[address][]" value="" placeholder="Enter the output address" class="int int_big">\
+						<span class="del">Remove</span>\
+					</div>\
+				<div class="box2 blocks" >\
+						<div class="txt">Distribution of funds: <i class="info" title="What part of your payment will be sent to this address?"></i></div>\
+						<input type="text" name="mixer[percent][]" value="'+ percent +'%" class="int int_small" data-symbol="%">\
+					<div class="count blocks">\
+							<div class="b_plus"></div>\
+							<div class="b_minus"></div>\
+						</div>\
+					</div>\
+				<div class="box3 blocks" >\
+						<div class="txt">Output Delay Time: <i class="info" title="How long does it take to send a payment?"></i></div>\
+						<input type="text" name="mixer[time][]" value="'+ random +'h" class="int int_small" data-symbol="h">\
+					<div class="count blocks">\
+							<div class="b_plus"></div>\
+							<div class="b_minus"></div>\
+						</div>\
+					</div>\
+				</div>\
+			');
+		} else {
+			alert("Limit 10")
+		}
+	});
+});
+</script>
+<script>
+$('#toggle-modal')
+  .on('click', function( e ) {
+    $('div#modal').addClass('active');
+    e.preventDefault();
+  });
+
+$('#mixer_begin')
+.on('click', function( e ) {
+  $('div#modal').removeClass('active');
+  e.preventDefault();
+});
+
+
+</script>
+<script type="text/javascript" src="./creatmix_files/setting.js.Без названия"></script>
+
+
+
+</body></html>

@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="If your are searching for the best bitcoin mixer, you have just found it. Even better than Helix mixer by grams, bitmixer.io or coinmixer.">
+	<meta name="keywords" content="bitcoin mixer, best bitcoin mixer, best bitcoin tumbler, bitcoin mixer reddit, bitcoin mixer reviews, helix bitcoin mixer, btc mixer, btc tumbler, bitcoin mixing service, best bitcoin mixing service">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>--- ULTRAMIXER --- | Bitcoin Mixer | Bitcoin Tumbler | Best Bitcoin mixing service | --- ULTRAMIXER ---</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie7-8.css">
+	<![endif]-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+	</head>
+<body>
+	<div id="page">
+		<header>
+			<div id="header">
+				<div class="container">
+					<div>
+						<div class="left">
+							<a href="index.html"><img src="img/logo.png" alt=""></a>
+						</div>
+						<ul id="nav">
+							<li><a href="work.html">How it works</a></li>
+							<li><a href="fees.html">Commissions</a></li>
+							<li><a href="faq.html">FAQs</a></li>
+							<li><a href="support.html">Contacts</a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div><!--header-->
+		</header>		<div id="midle" class="cont">
+			<div id="faq">
+				<h1>Questions and answers</h1>
+				<div class="box">
+					<img src="img/faq.png" alt="" class="ico">
+					
+					<div class="txt_q">I sent Bitcoin for mixing. How quickly will my payment be processed?</div>
+					<div class="txt_a">Depending on the size of your payment, its enrollment and further processing can take from 3 to 6 network confirmations.</div>
+
+					<div class="txt_q">What is the minimum amount that I can mix with your service?</div>
+					<div class="txt_a">The minimum amount for mixing is 0.01 Bitcoin. Any sent amount less than this value will be lost to you.</div>
+
+					<div class="txt_q">What is the maximum amount I can send for mixing?</div>
+					<div class="txt_a">You can send any amount within the current limit of the payment pool, which is 200.09150000 Bitcoin.</div>
+
+					<div class="txt_q">I got the Bitcoin address for the payment. How long will it remain active?</div>
+					<div class="txt_a">The address will be valid for the next 24 hours. If you did not use it during this period, do not use it!</div>
+
+					<div class="txt_q">How many times can I use the Bitcoin address for mixing?</div>
+					<div class="txt_a">The UltraMixer system generates a unique address for each mixing operation. Never re-use this address!</div>
+
+					<div class="txt_q">Can I close the browser page after I send the payment?</div>
+					<div class="txt_a">Of course. All you need is to copy the Bitcoin address where you need to send the payment and download the guarantee letter with the details of your transaction.</div>
+
+					<div class="txt_q">What is a letter of guarantee?</div>
+					<div class="txt_a">With each mixing operation, you receive a guarantee letter - detailed information about your payment and the mixing conditions. Save this file before receiving funds for the Bitcoin address of the recipient that you specified. Remember that only this letter of guarantee is an indisputable proof of your use of the service.</div>
+
+					<div class="txt_q">What is UltraMixer code?</div>
+					<div class="txt_a">After the first use of our service, you receive a unique UltraMixer code. Enter this code each time to avoid using your own coins sent during the previous mix. Using UltraMixer code will not allow others to track your payments.</div>
+					
+					<div class="txt_q">What information about my use of the service do you store?</div>
+					<div class="txt_a">UltraMixer does not collect or store such information. After your payment is delivered to the specified Bitcoin address, all data will be irretrievably deleted.</div>
+				</div>
+			</div>
+		</div><div id="height"></div>
+		<div id="footer">
+			<div class="container">
+				<div class="left">
+					<a href="index.html"><img src="img/logo2.png" alt=""></a>
+				</div>
+				<div class="boxs">
+					<ul class="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="work.html">How it works</a></li>
+						<li><a href="fees.html">Commissions</a></li>
+						<li><a href="faq.html">FAQs</a></li>
+						<li><a href="support.html">Contacts</a></li>
+					</ul>
+					<div class="copyright">©2020 by ULTRAMIXER. All Rights Reserved.</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div><!--footer-->
+	</div><!--page-->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script src="js/btcvalid.js"></script>
+<script type="text/javascript">
+var x = document.getElementById("Form1");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+function myFocusFunction() {
+    	$('.box1').each(function(){
+		$(this).find('input').each(function(i,n){
+		addr = $(n).val();
+		if ( checkAddress(addr) ) {
+        document.getElementById("toggle-modal").className = "btn btn_mixing2";
+		document.getElementById("toggle-modal").disabled = false;
+		}else{
+		document.getElementById("toggle-modal").className = "btn btn_mixing2 btn_gray";
+		document.getElementById("toggle-modal").disabled = true;
+		}
+		});
+    });
+}
+
+function myBlurFunction() {
+    	$('.box1').each(function(){
+		$(this).find('input').each(function(i,n){
+		addr = $(n).val();
+		if ( checkAddress(addr) ) {
+        document.getElementById("toggle-modal").className = "btn btn_mixing2";
+		document.getElementById("toggle-modal").disabled = false;
+		}else{
+		document.getElementById("toggle-modal").className = "btn btn_mixing2 btn_gray";
+		document.getElementById("toggle-modal").disabled = true;
+		}
+		});
+    });
+}
+function Check(){
+var totalPoints = 0;
+	$('.box2').each(function(){
+		$(this).find('input').each(function(i,n){
+        totalPoints += parseInt($(n).val(),10); 
+		});
+    });
+	var errorBTC = 0;
+	$('.box1').each(function(){
+		$(this).find('input').each(function(i,n){
+		addr = $(n).val();
+		if ( checkAddress(addr) ) {
+        errorBTC += 0;
+		}else{
+		errorBTC += 1;
+		}
+		});
+    });
+		if(errorBTC != 0){
+		alert("BTC Address you entered is invalid!");
+		return false;
+		}else{
+		btc_clean = 1;
+		}
+		if(totalPoints != 100 && errorBTC != 0){
+		alert("Invalid Precentage: You entered " + totalPoints + "% Must be 100%");
+		return false;
+		}else{
+		return true;
+		}
+}
+$(document).ready(function(){
+	$("#add_address").on("click", function(){
+		var percent;
+		document.getElementById("first").style.visibility = "visible";
+		document.getElementById("fprecent").value = "50%";
+		count = $("#mixer_step2 .box .row").length;
+		var min = 1;
+		var max = 4;
+		var random = Math.floor(Math.random() * (max - min + 1)) + min;
+		if(count < 10){
+		if(count == 1){
+			document.getElementById("fprecent").value = "90%";
+			percent = 10;
+		}else if(count == 2){
+			document.getElementById("fprecent").value = "80%";
+			percent = 10;
+		}else if(count == 3){
+			document.getElementById("fprecent").value = "70%";
+			percent = 10;
+		}else if(count == 4){
+			document.getElementById("fprecent").value = "60%";
+			percent = 10;
+		}else if(count == 5){
+			document.getElementById("fprecent").value = "50%";
+			percent = 10;
+		}else if(count == 6){
+			document.getElementById("fprecent").value = "40%";
+			percent = 10;
+		}else if(count == 7){
+			document.getElementById("fprecent").value = "30%";
+			percent = 10;
+		}
+		else if(count == 8){
+			document.getElementById("fprecent").value = "20%";
+			percent = 10;
+		}
+		else if(count == 9){
+			document.getElementById("fprecent").value = "10%";
+			percent = 10;
+		}
+			count++;
+			$("#mixer_step2 .box").append('\
+				<div class="row">\
+					<div class="box1 blocks" style="float:left;">\
+						<div class="txt">Output address №' + count + ': <i class="info" title="The address of the recipient of your Bitcoin payment"></i></div>\
+						<input type="text" name="mixer[address][]" value="" placeholder="Enter the output address" class="int int_big">\
+						<span class="del">Remove</span>\
+					</div>\
+				<div class="box2 blocks" >\
+						<div class="txt">Distribution of funds: <i class="info" title="What part of your payment will be sent to this address?"></i></div>\
+						<input type="text" name="mixer[percent][]" value="'+ percent +'%" class="int int_small" data-symbol="%">\
+					<div class="count blocks">\
+							<div class="b_plus"></div>\
+							<div class="b_minus"></div>\
+						</div>\
+					</div>\
+				<div class="box3 blocks" >\
+						<div class="txt">Output Delay Time: <i class="info" title="How long does it take to send a payment?"></i></div>\
+						<input type="text" name="mixer[time][]" value="'+ random +'h" class="int int_small" data-symbol="h">\
+					<div class="count blocks">\
+							<div class="b_plus"></div>\
+							<div class="b_minus"></div>\
+						</div>\
+					</div>\
+				</div>\
+			');
+		} else {
+			alert("Limit 10")
+		}
+	});
+});
+</script>
+<script>
+$('#toggle-modal')
+  .on('click', function( e ) {
+    $('div#modal').addClass('active');
+    e.preventDefault();
+  });
+
+$('#mixer_begin')
+.on('click', function( e ) {
+  $('div#modal').removeClass('active');
+  e.preventDefault();
+});
+
+
+</script>
+	<script type="text/javascript" src="js/setting.js"></script>
+</body>
+</html>
